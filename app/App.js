@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { StyleSheet, Dimensions, Platform, Text, View, Switch, Navigator, TouchableHighlight } from 'react-native';
 import { Main } from './Main';
-import Auth0Lock from 'react-native-lock';
-let lock = new Auth0Lock({clientId: 'bgq8j2TAZWaxFLvN12LGGyeyv9NLEUbB', domain: 'song-analyzer.auth0.com'});
+var Auth0Lock = require('react-native-lock');
+var lock = new Auth0Lock({clientId: 'bgq8j2TAZWaxFLvN12LGGyeyv9NLEUbB', domain: 'song-analyzer.auth0.com'});
 
 
 export default class App extends Component {
